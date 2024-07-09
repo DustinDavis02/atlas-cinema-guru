@@ -1,0 +1,10 @@
+/* components.css */
+.activity {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .activity p {
+    margin: 0;
+    font-size: 14px;
+  }

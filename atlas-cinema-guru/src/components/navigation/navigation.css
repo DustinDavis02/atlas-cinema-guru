@@ -1,0 +1,28 @@
+/* navigation.css */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+}
+
+.nav img {
+  border-radius: 50%;
+}
+
+.nav p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.nav span {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav span .icon {
+  margin-right: 5px;
+}

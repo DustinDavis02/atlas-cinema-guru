@@ -1,0 +1,50 @@
+/* dashboard.css */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-content {
+  display: flex;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar.small {
+  width: 80px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar li.selected {
+  background-color: #0056b3;
+}
+
+.sidebar .icon {
+  margin-right: 10px;
+}
+
+.activities {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}

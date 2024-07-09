@@ -1,0 +1,46 @@
+/* Styles for the movies components */
+
+.tag {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #eee;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.tag.selected {
+  background-color: #007BFF;
+  color: white;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.movie-card {
+  list-style: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  transition: box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card .icon {
+  cursor: pointer;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.movie-card .icon:hover {
+  color: #007BFF;
+}

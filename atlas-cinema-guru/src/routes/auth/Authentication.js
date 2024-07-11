@@ -20,7 +20,6 @@ const Authentication = ({ setIsLoggedIn, setUserUsername }) => {
       setIsLoggedIn(true);
     } catch (error) {
       console.error("Authentication failed:", error);
-      // Optionally, display an error message to the user
     }
   };
 

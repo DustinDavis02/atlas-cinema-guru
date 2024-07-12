@@ -49,24 +49,26 @@ const HomePage = () => {
   }, [loadMovies]);
 
   return (
-    <div className="dashboard-content">
-      <Filter
-        minYear={minYear}
-        setMinYear={setMinYear}
-        maxYear={maxYear}
-        setMaxYear={setMaxYear}
-        sort={sort}
-        setSort={setSort}
-        genres={genres}
-        setGenres={setGenres}
-        title={title}
-        setTitle={setTitle}
-      />
-      <ul>
+    <div className="main-content">
+      <div className="filter-container">
+        <Filter
+          minYear={minYear}
+          setMinYear={setMinYear}
+          maxYear={maxYear}
+          setMaxYear={setMaxYear}
+          sort={sort}
+          setSort={setSort}
+          genres={genres}
+          setGenres={setGenres}
+          title={title}
+          setTitle={setTitle}
+        />
+      </div>
+      <div className="movie-cards">
         {movies.map(movie => (
           <MovieCard key={movie.id} movie={movie} />
         ))}
-      </ul>
+      </div>
       <Button
         label="Load More.."
         onClick={() => {

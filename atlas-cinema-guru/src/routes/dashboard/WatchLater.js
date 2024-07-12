@@ -22,13 +22,13 @@ const WatchLater = () => {
   }, []);
 
   return (
-    <div className="dashboard-content">
+    <div className="watchlater-content">
       <h1>Movies to watch later</h1>
-      <ul>
+      <div className="movie-cards">
         {movies.map(movie => (
           <MovieCard key={movie.id} movie={movie} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

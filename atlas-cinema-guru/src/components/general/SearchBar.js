@@ -12,7 +12,7 @@ const SearchBar = ({ title, setTitle }) => {
         type="text"
         value={title}
         onChange={handleInput}
-        placeholder="Search..."
+        placeholder="Search Movies"
       />
     </div>
   );

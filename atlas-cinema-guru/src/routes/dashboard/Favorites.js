@@ -22,13 +22,13 @@ const Favorites = () => {
   }, []);
 
   return (
-    <div className="dashboard-content">
+    <div className="favorites-content">
       <h1>Movies you like</h1>
-      <ul>
+      <div className="movie-cards">
         {movies.map(movie => (
           <MovieCard key={movie.id} movie={movie} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

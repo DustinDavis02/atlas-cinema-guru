@@ -4,14 +4,15 @@
   cursor: pointer;
   padding: 5px 10px;
   margin: 5px;
-  border-radius: 5px;
-  background-color: #eee;
+  border-radius: 50px;
+  border-color: #b20710;
+  background-color: #1c1c1c;
   display: inline-block;
   transition: background-color 0.3s ease;
 }
 
 .tag.selected {
-  background-color: #007BFF;
+  background-color: #b20710;
   color: white;
 }
 

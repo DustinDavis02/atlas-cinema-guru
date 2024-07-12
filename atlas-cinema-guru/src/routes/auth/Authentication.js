@@ -24,38 +24,40 @@ const Authentication = ({ setIsLoggedIn, setUserUsername }) => {
   };
 
   return (
-    <div className="auth-container">
-      <div className="auth-header">
-        <button 
-          className={switchState ? "active" : ""} 
-          onClick={() => setSwitchState(true)}
-        >
-          Sign In
-        </button>
-        <button 
-          className={!switchState ? "active" : ""} 
-          onClick={() => setSwitchState(false)}
-        >
-          Sign Up
-        </button>
+    <div className="auth-page">
+      <div className="auth-container">
+        <div className="auth-header">
+          <button 
+            className={switchState ? "active" : ""} 
+            onClick={() => setSwitchState(true)}
+          >
+            Sign In
+          </button>
+          <button 
+            className={!switchState ? "active" : ""} 
+            onClick={() => setSwitchState(false)}
+          >
+            Sign Up
+          </button>
+        </div>
+        <form className="auth-form" onSubmit={handleSubmit}>
+          {switchState ? (
+            <Login 
+              username={username}
+              password={password}
+              setUsername={setUsername}
+              setPassword={setPassword}
+            />
+          ) : (
+            <Register 
+              username={username}
+              password={password}
+              setUsername={setUsername}
+              setPassword={setPassword}
+            />
+          )}
+        </form>
       </div>
-      <form className="auth-form" onSubmit={handleSubmit}>
-        {switchState ? (
-          <Login 
-            username={username}
-            password={password}
-            setUsername={setUsername}
-            setPassword={setPassword}
-          />
-        ) : (
-          <Register 
-            username={username}
-            password={password}
-            setUsername={setUsername}
-            setPassword={setPassword}
-          />
-        )}
-      </form>
     </div>
   );
 };
